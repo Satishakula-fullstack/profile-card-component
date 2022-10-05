@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+
+### Neutral
+
+Dark gray: hsl(0, 0%, 59%)
+
+## Typography
+
+### Body Copy
+
+- Font size (name and stats): 18px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 48vw bottom 50vh, left 50vw top 50vh;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  max-width: 350px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.profile-card {
+  height: 150px;
+  width: 350px;
+  background: url(images/bg-pattern-card.svg);
+  background-size: cover;
+}
+.profile-info {
+  background: #fff;
+  width: 350px;
+  height: 250px;
+  text-align: center;
+  line-height: 1.8rem;
+}
+.profile-info img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-radius: 50%;
+  /* margin: -50px auto -30px auto; */
+  margin-top: -50px;
+  border: 5px solid #fff;
+  overflow: hidden;
+  text-align: center;
+}
+.profile-name {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-weight: 1rem;
+}
+.profile-age {
+  margin-left: 10px;
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+}
+.profile-place {
+  font-weight: 500;
+  color: hsl(0, 0%, 59%);
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.profile-stats {
+  border-top: 1px solid hsl(0, 10%, 88%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.stats-num {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.stats-num h4 {
+  margin-top: 5px;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin-bottom: -7px;
+}
+.stats-info {
+  padding-left: 10px;
+  font-size: 0.8rem;
+  color: hsl(0, 0%, 59%);
+  letter-spacing: 0.1rem;
+}
